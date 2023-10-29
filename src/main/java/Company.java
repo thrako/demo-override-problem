@@ -17,10 +17,13 @@ public abstract class Company extends BasePerson {
 
     public abstract <T extends Company> T addRepresentative(BasePerson representative);
 
-    public abstract <T extends Company> T addAllRepresentatives(List<BasePerson> representatives);
+    //public abstract <T extends Company> T addAllRepresentatives(List<BasePerson> representatives);
+    public abstract Company addAllRepresentatives(List<BasePerson> representatives);
 
     public boolean removeRepresentative(BasePerson representative) {
 
         return this.representatives.remove(representative);
     }
+
+
 }

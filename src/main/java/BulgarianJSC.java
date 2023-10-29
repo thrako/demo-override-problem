@@ -1,23 +1,23 @@
 import java.util.List;
 
-public class BulgarianLLC extends Company{
+public class BulgarianJSC extends Company{
 
     @SuppressWarnings("unchecked")
     @Override
-    public BulgarianLLC addRepresentative(BasePerson representative) {
+    public BulgarianJSC addRepresentative(BasePerson representative) {
 
         this.representatives.add(representative);
         return this;
     }
 
     @Override
-    public BulgarianLLC addAllRepresentatives(List<BasePerson> representatives) {
+    public BulgarianJSC addAllRepresentatives(List<BasePerson> representatives) {
 
         this.representatives.addAll(representatives);
         return this;
     }
 
-    public BulgarianLLC doNothingLLCSpecific() {
+    public BulgarianJSC doNothingJSCSpecific() {
         return this;
     }
 }
